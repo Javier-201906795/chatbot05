@@ -3,10 +3,13 @@ const makeWASocket = require("@whiskeysockets/baileys").default;
 
 async function connectionLogic(){
     const { state, saveCreds } = await useMultiFileAuthState("auth_infor_baileys");
+    
     const sock = makeWASocket({
         printQRInTerminal: true,
         auth: state,
     });
+
+    sock.log
 
     sock.ev.on("connection.update", async (update) => {
         const { connection, lastDisconnect, qr } = update || {};
