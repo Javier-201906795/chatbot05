@@ -9,7 +9,7 @@ async function connectionLogic(){
         auth: state,
     });
 
-    sock.log
+    
 
     sock.ev.on("connection.update", async (update) => {
         const { connection, lastDisconnect, qr } = update || {};
