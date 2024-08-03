@@ -1,5 +1,12 @@
 {
+  "name": "chatbot05",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Javier-201906795/chatbot05.git",
+  "author": "Javier",
+  "license": "MIT",
   "dependencies": {
-    "@whiskeysockets/baileys": "^6.7.5"
+    "@whiskeysockets/baileys": "^6.7.5",
+    "express": "^4.19.2"
   }
 }
